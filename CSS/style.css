@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    
+
+}
+
+
+div.container{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+
+#buy{
+    padding: 1rem 2.2rem;
+    font-size: 1rem bolder;
+    background-color: rgb(231, 169, 55);
+    border-radius: 20%;
+    border: solid transparent;
+    display: flex;
+    justify-content: center;
+   margin: 2.5rem;
+}
