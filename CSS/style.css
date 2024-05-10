@@ -1,28 +1,39 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: red;
-    
 
+
+body{
+    background-image: url(../img/train.jfif);
+    font-family: cursive;
 }
+
 
 
 div.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
     opacity: 0.8;
     color: white;
-    margin-top: 5rem;
+    border: solid transparent;
+    border-radius: 25%;
+    margin:5rem 15rem;
     padding: 5rem;
 }
 
-#buy{
-    padding: 1rem 2.2rem;
-    font-size: 1rem bolder;
+main div > button{
+    color: white;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+    font-family: cursive;
     background-color: rgb(231, 169, 55);
-    border-radius: 20%;
+    border-radius: 10%;
     border: solid transparent;
     display: flex;
     justify-content: center;
    margin: 2.5rem;
+}
+
+main h2{
+    color: rgba(249, 10, 18, 0.893);
+    text-decoration-line:underline;
 }
