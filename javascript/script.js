@@ -1,27 +1,32 @@
 
 
+
+
 const bottone = document.querySelector('button');
-bottone.addEventListener('click', function() {
-    let userTravKmEl = document.querySelector('input[type="text"');
-    let userAgeEl = document.querySelector('input[type="number"');
+bottone.addEventListener('click', function(){
+    
+   const userTravKm = Number.parseFloat(document.querySelector('input[type="text"').value, 10);
+   const userAge = Number.parseInt(document.querySelector('input[type="number"').value, 10);
 
-     userTravKmEl = Number.parseFloat('Type the km to travel'), 10;
-     userAgeEl = Number.parseInt('Type your age'), 10;
-
-     console.log(userTravKmEl.value , userAgeEl.value);
-
-     const costKmEl = 0.267113;
-
+     const costKm = 0.267113;
      let discount = 0;
-     if(userAgeEl<21){
-        discount =24.552;
-     }else if(userAgeEl>63){
-        discount =37.893;
-     }
+
+      if(userAge < 21){
+         discount =24.552;
+      }else if(userAge > 63){
+         discount =37.893;
+      } 
 
 
-     let costTicket = costKmEl.value * userTravKmEl.value;
-     costTicket = costTicket - ((costTicket/100) * discount);
+     let costTicket = costKm * userTravKm;
+        costTicket = costTicket - ((costTicket/100) * discount);
+        console.log(costTicket);
      let hTwo =document.querySelector('h2');
-     hTwo.innerHTML += console.log(costTicket.toFixed(2), costTicket);
+        hTwo.innerHTML += costTicket + '$';
 } )
+
+
+
+
+
+

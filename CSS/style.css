@@ -21,7 +21,7 @@ div.container{
 }
 
 main div > button{
-    color: white;
+    color: rgb(55, 36, 1);
     padding: .8rem 2rem;
     font-size: 1rem;
     font-family: cursive;
@@ -32,6 +32,12 @@ main div > button{
     justify-content: center;
    margin: 2.5rem;
 }
+
+main div > button:hover{
+    background-color: rgb(247, 207, 133);
+    
+}
+
 
 main h2{
     color: rgba(249, 10, 18, 0.893);
